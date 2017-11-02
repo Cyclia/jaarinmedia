@@ -1,0 +1,23 @@
+{
+  "name": "jaarin",
+  "version": "1.0.0",
+  "description": "Jaar In Media",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cyclia/jaarinmedia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cyclia/jaarinmedia/issues"
+  },
+  "homepage": "https://github.com/Cyclia/jaarinmedia#readme"
+}
