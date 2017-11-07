@@ -1,6 +1,8 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
+var dotenv = require('dotenv').config()
+
 
 var app = express();
 
@@ -8,6 +10,9 @@ var app = express();
 //     console.log('Logging...');
 //     next();
 // }
+
+//  api test
+var api_key = process.env.API_KEY;
 
 // app.use(logger);
 
@@ -30,4 +35,5 @@ app.get('/', function(req, res){
 
 app.listen(3000, function(){
     console.log('Server started on Port 3000');
+    console.log(api_key);
 })
