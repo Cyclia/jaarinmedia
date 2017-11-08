@@ -1,3 +1,27 @@
 <% include partials/header %>
+<div class="container">
 <h1><%= title %></h1>
+
+    <h2>Voeg klanten toe</h2>
+    <form method="POST" action="/users/add">
+    <fieldset>
+        <label>Voornaam</label>
+        <input type="text" name="first_name">
+        <br>
+        <label>Achternaam</label>
+        <input type="text" name= "last_name">
+        <br><br>
+        <label>Email</label>
+        <input type="text" name= "email">
+        <input type="submit" value="Submit">
+    </fieldset>
+    </form>
+
+<ul>
+<% users.forEach(function(user){ %>
+    <li><%= user.first_name %></li>
+    <li><%= user.id %></li>
+<% }) %>
+</ul>
+</div>
 <% include partials/footer %>
